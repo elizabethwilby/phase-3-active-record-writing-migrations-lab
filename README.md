@@ -32,7 +32,7 @@ with a type `string`. Check the
 After you finish defining the `change` method, run the migrations by running:
 
 ```console
-$ bundle exec rake db:migrate
+bin/rake db:migrate
 ```
 
 Check the status of your migration and verify the schema was updated correctly
@@ -46,7 +46,7 @@ these columns to the existing file._ Let's call our new file
 `02_add_grade_and_birthdate_to_students.rb`. It should live in `db/migrate` just
 like the first migration.
 
-> **Note**: While we generally recommend using `rake db:create_migration` to create
+> **Note**: While we generally recommend using bin/rake db:create_migration` to create
 > the migration files, for this lab you'll need to create the file name manually
 > to ensure that the tests are able to find a file with the correct name.
 
@@ -68,7 +68,7 @@ column you're adding. Add a `grade` column that is an `integer`, and a
 After you finish defining the `change` method, run the migrations by running:
 
 ```console
-$ bundle exec rake db:migrate
+bin/rake db:migrate
 ```
 
 Check the status of your migration and verify the schema was updated correctly
@@ -97,7 +97,7 @@ as usual. This time, in the `#change` method, be sure to use the
 After you finish defining the `#change` method, run the migrations by running:
 
 ```console
-$ bundle exec rake db:migrate
+bin/rake db:migrate
 ```
 
 Check the status of your migration and verify the schema was updated correctly
